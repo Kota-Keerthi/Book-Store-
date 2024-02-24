@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Management System</title>
+    <link rel="stylesheet" href="day-8 css.css">
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>My Bookstore</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Add Book</a></li>
+                        <li><a href="#">Orders</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="search-bar">
+            <div class="container">
+                <form action="#" method="get">
+                    <input type="text" id="searchInput" name="searchInput" placeholder="Search by title, author, or genre" required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <section class="book-listing">
+            <div class="container">
+                <h2>Book Listing</h2>
+                <div class="book-card">
+                    <img src="https://hips.hearstapps.com/wdy.h-cdn.co/assets/16/19/book25.jpg?crop=1.0xw:1xh;center,top&resize=768:*" alt="Product Image">
+                    <h3 class="book-title">It's Never Too Late to Begin Again</h3>
+                    <p class="book-details">By Julia cameron</p>
+                    <p class="book-details">Genre: Fiction</p>
+                    <p class="book-price">₹375.00</p>
+                    <button>Buy Now</button>
+                </div>
+
+                <div class="book-card">
+                    <img src="https://images.randomhouse.com/promo_image/9781101875322_4579.jpg" alt="Product Image">
+                    <h3 class="book-title">Designing of Your Life</h3>
+                    <p class="book-details">By Bill Burnett And Dave Evans</p>
+                    <p class="book-details">Genre: Fiction</p>
+                    <p class="book-price">₹178.00</p>
+                    <button>Buy Now</button>
+                </div>
+
+                <div class="book-card">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573742414l/52762903.jpg" alt="Product Image">
+                    <h3 class="book-title">The Wine Makers Wife</h3>
+                    <p class="book-details">by Kristin Harmel</p>
+                    <p class="book-details">Genre: Fiction</p>
+                    <p class="book-price">₹275.00</p>
+                    <button>Buy Now</button>
+                </div>
+
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/61B-HSOIHiL._AC_UF1000,1000_QL80_.jpg">
+                    <h3 class="book-title">Sports Psychology</h3>
+                    <p class="book-details">By Ravi Kumar N G</p>
+                    <p class="book-details">Genre: Fiction</p>
+                    <p class="book-price">₹249.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </section>
+       <section class="add-book-form">
+            <div class="container">
+                <h2>Add New Book</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre:</label>
+                        <input type="text" id="genre" name="genre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" name="price" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Bookstore Management System</p>
+            </div>
+        </footer>
+</body>
